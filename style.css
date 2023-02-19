@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80) no-repeat center/cover;
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    text-shadow: 1px 1px 2px white;
+}
+
+a {
+    font-family: monospace;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    text-shadow: 1px 1px 2px black;
+}
+
+p {
+    text-transform: lowercase;
+}
+
+header, footer {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 0 auto;
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dish {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta {
+    background: url(https://blogscdn.thehut.net/app/uploads/sites/478/2021/04/FEATURE0326-THG0021212-MYP-NF-PASTA-1800-x-672-min_1619626601.jpg) no-repeat center/cover;
+}
+
+.pancake {
+    background: url(https://blogscdn.thehut.net/app/uploads/sites/478/2023/02/Protein-Pancakes-HERO-9_1577795135_1675850791.jpg) no-repeat center/cover;
+}
+
+.pizza {
+    background: url(https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80) no-repeat center/cover;
+}
+
+.dish:hover {
+    transform: scale(110%);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 6px white;
+}
